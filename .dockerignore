@@ -1,0 +1,46 @@
+# git
+.git
+.gitignore
+
+# Python / venv (хостовый — Windows-бинарники!)
+.venv
+venv
+__pycache__
+*.py[cod]
+*$py.class
+
+# кэши
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.coverage
+htmlcov
+coverage.xml
+
+# секреты
+.env
+.env.*
+!.env-example
+
+# IDE / OS
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
+
+# логи / локальная БД
+*.log
+db.sqlite3
+
+# Docker (не в контекст)
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# тесты (в прод-образе не нужны; если хочешь гонять в контейнере — убери)
+tests/
+
+# документация (не в образе; pyproject.toml readme — см. ниже)
+*.md
+!README.md
